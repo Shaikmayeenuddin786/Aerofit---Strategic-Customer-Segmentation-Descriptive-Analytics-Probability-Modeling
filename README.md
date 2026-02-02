@@ -1,4 +1,13 @@
 # **Aerofit - Customer Segmentation,Product Strategy Analysis (Descriptive Analytics + Probability Modeling)**
+---
+
+## **Quick Section Summary**
+- **Business Problem** - What challenge Aerofit faced
+- **Objectives** - What the analysis aimed to achieve
+- **Technical Stack** - Tools and technologies used
+- **Project Features** - What you actually built/analyzed
+- **Repository Structure** - How the project is organized
+- **Top Business Insights & Recommendations** - Actionable business outcomes
 
 
 ## **Why This Project**
@@ -39,22 +48,62 @@ offered by the company, to provide a better recommendation of the treadmills to 
 - **Data Quality Checks**: Missing value analysis, outlier detection using IQR method, data type validation
 - **Statistical Summaries**: Comprehensive descriptive statistics for both categorical and numerical variables
 
+![DATASET INFORMATION](https://github.com/user-attachments/assets/e0dc8090-9595-47bd-b714-c554cf656f1e)
+
+![MISSING VALUES_PERCENTAGE CHECK](https://github.com/user-attachments/assets/9c9a8494-037e-4e91-b320-9c09a64f7965)
+
+![STATISTICAL SUMMARY_NUMERICAL   CATEGORICAL COLUMNS](https://github.com/user-attachments/assets/f3238378-57ee-454e-8a9a-ae69aa4548ca)
+
+
 ### **Visual Analytics & Customer Profiling**
-- **Univariate Analysis**: Distribution plots for numerical variables (Age, Income, Fitness) and categorical variables (Product, Gender, Marital Status)
-- **Bivariate Analysis**: Product vs. demographic comparisons using count plots and box plots
-- **Customer Segmentation**: Created detailed profiles for each product tier showing clear demographic patterns
+**UNIVARIATE ANALYSIS (CATEGORICAL & NUMERICAL VARIABLES):**
+  
+  ***CATEGORICAL***
+  - KP281 is the most popular model at 44%, showing that entry-level treadmills have the market appeal.
+  - More female customers (58%) than male (42%), suggesting Aerofit products appeal more to women overall.
+  - Most customers are partnered (59% vs 41% single), indicating treadmills might be purchased more for family or shared household use.
+  
+  ***NUMERICAL***
+  - Age distribution is normal: Most customers are in their 20s-30s (mean 28.8)
+  - Income varies widely: shows most customers earn $40K-$60K, but there's a long tail of higher earners that could be targeted for premium models.
+  - Fitness selfratings: The average fitness of 3.3/5 suggests customers are moderately active, with fewer at the extremes (very unfit)
+  - Education : Most customers have approx 16 years of education 
+
+![UNIVARIATE ANALYSIS - CATEGORICAL VARIABLES](https://github.com/user-attachments/assets/d1ba23d4-5641-493f-8a58-41a3cc78234d)
+![UNIVARIATE ANALYSIS - NUMERICAL VARIABLES](https://github.com/user-attachments/assets/401d730a-32c4-4fd3-8232-f3c04c71b570)
+
+**BIVARIATE ANALYSIS:** 
+
+  - *Gender segmentation is clear:* The top-left chart shows females prefer KP281, males dominate KP781, and KP481 has more balanced gender distribution. This is one of your strongest patterns.
+  - *Income is the strongest predictor:* The middle-bottom chart clearly shows KP781 buyers have much higher incomes than other groups, with almost no overlap in income ranges between products.
+  - *Fitness level increases with product tier:* The top-right chart shows KP781 buyers rate themselves as most fit (mostly 4-5), while KP281 buyers are least fit (mostly 3-4).
+  - *Age differences are minimal:* The bottom-left chart shows all three products have similar age ranges, with only slight variations - age isn't a major differentiator.
+  - *Usage patterns align with product tiers:* The bottom-right chart shows KP781 buyers plan highest weekly usage (mostly 4-5 times), while KP281 buyers plan lowest usage (mostly 2-3 times).
+
+![BIVARIATE ANALYSIS - PRODUCT VS OTHER VARIABLES](https://github.com/user-attachments/assets/fb522707-dd38-4aaa-bd21-7a4690dbc245)
+
+ 
 
 ### **Probability & Statistical Analysis**
 - **Marginal Probabilities**: Calculated overall product purchase distributions (KP281: 44%, KP481: 33%, KP781: 22%)
 - **Conditional Probabilities**: Key insights including 68% probability of fitness level 4-5 customers buying KP781
 - **Contingency Tables**: Two-way tables showing relationships between product choice and customer attributes
 
+<img width="801" height="397" alt="image" src="https://github.com/user-attachments/assets/7b668fc8-da47-4f80-a91e-e97a95c04b34" />
+
+
+
+
 ### **Business Insights Generation**
-- **Customer Profiles**: 
+**Customer Profiles**: 
   - KP281: Entry-level users, younger demographic, lower income, casual fitness enthusiasts
   - KP481: Intermediate users, balanced gender distribution, moderate income, regular exercisers
   - KP781: Advanced users, predominantly male, high income, serious fitness enthusiasts
-- **Strategic Recommendations**: Targeted marketing strategies, upselling frameworks, product placement guidelines
+    
+![CUSTOMER PROFILE FOR KP281](https://github.com/user-attachments/assets/76d2856e-12e9-4cb5-b161-74cd3659b868)
+![CUSTOMER PROFILE FOR KP481](https://github.com/user-attachments/assets/40cb9106-5e11-4257-8746-257ac2272c72)
+![CUSTOMER PROFILE FOR KP781](https://github.com/user-attachments/assets/e1db3a36-739f-4ecd-9041-dcd4f2920ab8)
+
 
 ## **Repository Structure**
 ```
@@ -140,17 +189,13 @@ Aerofit-Customer-Analysis/
 ### Marital Status : 
 - Create family/friend referral programs, especially for KP281 and KP481 which are popular among partnered individuals.
 
+---
 
-## **How to Run This Project**
+## **How to Run This Project( Anaconda - Jupyter notebook)**
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
 3. Open `notebooks/Aerofit_Analysis.ipynb` in Jupyter
 4. Run cells sequentially to reproduce the analysis
 
-## **Lessons Learned**
-- Foundational descriptive analytics provides critical business insights before predictive modeling
-- Customer segmentation reveals hidden patterns in purchasing behavior
-- Probability analysis offers quantifiable guidance for business decisions
-- Clear visualizations communicate complex findings to non-technical stakeholders
 
 ---
