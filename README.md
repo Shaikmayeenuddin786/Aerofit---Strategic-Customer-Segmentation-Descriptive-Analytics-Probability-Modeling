@@ -1,22 +1,26 @@
-# Aerofit---Strategic-Customer-Segmentation-Descriptive-Analytics-Probability-Modeling
 # **Aerofit - Customer Segmentation,Product Strategy Analysis (Descriptive Analytics + Probability Modeling)**
 
-*This project demonstrates the application of descriptive statistics and probability theory to solve real-world business problems in the retail/fitness industry.*
 
-## **Project Overview**
-A comprehensive descriptive analytics project for Aerofit, a leading fitness equipment manufacturer, to identify customer characteristics for each treadmill model and create targeted marketing strategies. This analysis helped Aerofit understand their customer base across three product tiers and develop data-driven recommendations for sales optimization.
+## **Why This Project**
+This project demonstrates the ability to translate raw customer data into strategic business insights. Focuses on foundational descriptive analytics - a critical skill to solve real-world business problems in the retail/fitness industry.
 
 ## **Business Problem**
-Aerofit needed to identify the characteristics of the target audience for each type of treadmill to provide better recommendations to new customers. The company wanted to understand whether there were significant differences in customer demographics across their product lineup (KP281, KP481, KP781) to optimize marketing efforts and improve sales effectiveness.
+*Strategic Market Segmentation & Product Positioning.*
+A comprehensive descriptive analytics project for Aerofit, a leading fitness equipment manufacturer.
+Aerofit Treadmill Customer Analysis - To identify the characteristics of the target audience for each type of treadmill 
+offered by the company, to provide a better recommendation of the treadmills to the new customers. The company also wanted to understand whether there were significant differences in customer demographics across their three flagship treadmill models (KP281, KP481, KP781) to and develop data-driven recommendations to optimize marketing efforts and improve sales effectiveness.
+
+### **Pain Points**
+- Customer-Product Mismatch: Lack of a structured framework to match new customers to the right treadmill model, leading to potential dissatisfaction or lost sales.
+- Marketing Inefficiency: Broad, "one-size-fits-all" marketing efforts due to an unclear understanding of the unique demographic signatures of each product tier.
+- Untapped Upsell Potential: An inability to distinguish between entry-level and premium buyers, resulting in missed opportunities to move high-income prospects toward premium models.
+
 
 ## **Objectives**
 - Identify distinct customer segments for each treadmill model (KP281, KP481, KP781)
 - Develop customer profiles using descriptive statistics and probability analysis
 - Create actionable insights for targeted marketing and sales recommendations
 - Establish a data-driven framework for product positioning and pricing strategy
-
-## **Why This Project**
-This project demonstrates the ability to translate raw customer data into strategic business insights. Focuses on foundational descriptive analytics - a critical skill for understanding customer behavior and informing business strategy.
 
 
 ## **Technical Stack**
@@ -74,18 +78,52 @@ Aerofit-Customer-Analysis/
 ```
 
 
-## **Key Findings**
-1. **Clear Income Segregation**: KP781 buyers earn 65% more than KP281 buyers
-2. **Gender-Based Patterns**: 80% of KP781 buyers are male vs. 57% female for KP281
-3. **Fitness Level Correlation**: Higher fitness levels strongly predict premium product purchases
-4. **Usage Patterns**: KP781 users plan 50% more weekly usage than KP281 users
+# **Final Business Insights & Recommendations**
+## **Top 10 Insights & Recommendations**
 
-## **Business Impact**
-The analysis provided Aerofit with:
-- **Targeted Marketing Strategies**: Different approaches for each customer segment
-- **Product Positioning**: Data-backed justification for tiered pricing
-- **Sales Enablement**: Probability-based recommendation framework for sales teams
-- **Customer Journey Mapping**: Clear path from entry-level to premium products
+### 1. Product Popularity:
+- KP281 is the most popular product (44% of sales), followed by KP481 (33%), and KP781 (23%). This shows a healthy distribution across price points.
+
+
+### 2. Gender Preference:
+- Males dominate premium purchases: 80% of KP781 buyers are male
+- Females: 57% of KP281 buyers are female
+- KP481 has balanced gender distribution
+
+
+### 3. Income :
+- KP781 buyers have highest average income ($74,000)
+- KP481 buyers have moderate income ($55,000)
+- KP281 buyers have lowest average income ($45,000)
+
+
+### 4. Age Patterns:
+- KP781 buyers are slightly older (average 29 years)
+- KP281 attracts youngest customers (average 28 years)
+
+
+### 5. Fitness Level:
+- KP781 buyers rate themselves as most fit (average 4.5/5)
+- KP481 buyers are moderately fit (average 3.5/5)
+- KP281 buyers are least fit (average 3.0/5)
+
+
+### 6. Usage Patterns:
+- KP781 users plan to use treadmill most frequently (5 times per week)
+- KP481 users plan moderate usage (4 times/week)
+- KP281 users plan least usage (3 times/week)
+
+
+### 7. Marital Status Impact:
+- Partnered individuals slightly prefer KP281 and KP481
+- Single individuals show higher preference for KP781 (58% of KP781 buyers are "single")
+
+
+### 8. Probability Scenarios:
+- A male customer has 34% probability of buying KP781
+- A high-income customer (>$50K) has 58% probability of buying KP781
+- A highly fit customer (level 4-5) has 68% probability of buying KP781
+
 
 ## **How to Run This Project**
 1. Clone the repository
