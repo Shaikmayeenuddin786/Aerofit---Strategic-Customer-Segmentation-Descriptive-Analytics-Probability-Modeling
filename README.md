@@ -9,20 +9,22 @@
 - **Repository Structure** - How the project is organized
 - **Top Business Insights & Recommendations** - Actionable business outcomes
 
+---
 
 ## **Why This Project**
 This project demonstrates the ability to translate raw customer data into strategic business insights. Focuses on foundational descriptive analytics - a critical skill to solve real-world business problems in the retail/fitness industry.
 
 ## **Business Problem**
 *Strategic Market Segmentation & Product Positioning.*
+
 A comprehensive descriptive analytics project for Aerofit, a leading fitness equipment manufacturer.
 Aerofit Treadmill Customer Analysis - To identify the characteristics of the target audience for each type of treadmill 
 offered by the company, to provide a better recommendation of the treadmills to the new customers. The company also wanted to understand whether there were significant differences in customer demographics across their three flagship treadmill models (KP281, KP481, KP781) to and develop data-driven recommendations to optimize marketing efforts and improve sales effectiveness.
 
 ### **Pain Points**
-- Customer-Product Mismatch: Lack of a structured framework to match new customers to the right treadmill model, leading to potential dissatisfaction or lost sales.
-- Marketing Inefficiency: Broad, "one-size-fits-all" marketing efforts due to an unclear understanding of the unique demographic signatures of each product tier.
-- Untapped Upsell Potential: An inability to distinguish between entry-level and premium buyers, resulting in missed opportunities to move high-income prospects toward premium models.
+- **Customer-Product Mismatch:** Lack of a structured framework to match new customers to the right treadmill model, leading to potential dissatisfaction or lost sales.
+- **Marketing Inefficiency:** Broad, "one-size-fits-all" marketing efforts due to an unclear understanding of the unique demographic signatures of each product tier.
+- **Untapped Upsell Potential:** An inability to distinguish between entry-level and premium buyers, resulting in missed opportunities to move high-income prospects toward premium models.
 
 
 ## **Objectives**
@@ -52,6 +54,35 @@ offered by the company, to provide a better recommendation of the treadmills to 
 
 ![MISSING VALUES_PERCENTAGE CHECK](https://github.com/user-attachments/assets/9c9a8494-037e-4e91-b320-9c09a64f7965)
 
+
+## OUTLIER DETECTION USING BOXPLOTS
+<img width="1083" height="1068" alt="image" src="https://github.com/user-attachments/assets/91f02372-4dca-4419-b889-0de6f8868575" />
+
+**Age Outliers (5 outliers: 47, 48, 50)**:
+- Older fitness enthusiasts: Customers aged 47-50 represent a small but valuable segment of older, active individuals who likely prioritize health maintenance
+- Premium potential: These older customers likely have higher disposable income and could be targeted for premium models with joint-friendly features
+
+**Income Outliers (19 outliers: $83K-$104K)**
+- Clear premium market: High-income outliers ($83K+) represent the natural target for KP781 ($2,500 treadmill), confirming the pricing strategy aligns with customer affordability
+- Market segmentation validation: These outliers aren't errors but actual high-earning customers, showing Aerofit successfully attracts affluent fitness enthusiasts
+
+**Miles Outliers (13 outliers: 188-360 miles/week)**
+- Extreme fitness outliers: Customers planning 188-360 miles/week (27-51 miles daily) are either ultra-athletes or potential data entry errors
+- Product durability focus: These users would require commercial-grade equipment, suggesting opportunity for higher-end or commercial product lines
+
+**Education Outliers (4 outliers: 20-21 years)**
+- Graduate-degree professionals: Customers with 20+ years education (master's/doctoral degrees) correlate with higher income levels and premium product purchases
+- Feature appreciation: Highly educated customers likely research thoroughly and value technical specifications, advanced features, and data tracking capabilities
+
+**Usage Outliers (9 outliers: 6-7 times/week)**
+- Dedicated daily users: Customers planning near-daily usage represent serious fitness commitment and are ideal candidates for durable, higher-end models
+- Warranty considerations: High-usage customers may require extended warranties or maintenance plans, representing additional revenue opportunities
+
+**Fitness Outliers (2 outliers: rating 1/5)**
+- True beginners: Customers self-rating as "very unfit" (1/5) represent the entry-level market perfect for KP281 with beginner-friendly features and guidance
+- Upsell potential: These customers represent growth opportunity as they improve fitness and potentially upgrade equipment over time
+
+
 ![STATISTICAL SUMMARY_NUMERICAL   CATEGORICAL COLUMNS](https://github.com/user-attachments/assets/f3238378-57ee-454e-8a9a-ae69aa4548ca)
 
 
@@ -64,9 +95,9 @@ offered by the company, to provide a better recommendation of the treadmills to 
   - Most customers are partnered (59% vs 41% single), indicating treadmills might be purchased more for family or shared household use.
   
   ***NUMERICAL***
-  - Age distribution is normal: Most customers are in their 20s-30s (mean 28.8)
-  - Income varies widely: shows most customers earn $40K-$60K, but there's a long tail of higher earners that could be targeted for premium models.
-  - Fitness selfratings: The average fitness of 3.3/5 suggests customers are moderately active, with fewer at the extremes (very unfit)
+  - Age distribution: Most customers are in their 20s-30s (mean 28.8)
+  - Income : shows most customers earn $40K-$60K, but there's a long tail of higher earners that could be targeted for premium models.
+  - Fitness self ratings: The average fitness of 3.3/5 suggests customers are moderately active, with fewer at the extremes (very unfit)
   - Education : Most customers have approx 16 years of education 
 
 ![UNIVARIATE ANALYSIS - CATEGORICAL VARIABLES](https://github.com/user-attachments/assets/d1ba23d4-5641-493f-8a58-41a3cc78234d)
@@ -74,11 +105,11 @@ offered by the company, to provide a better recommendation of the treadmills to 
 
 **BIVARIATE ANALYSIS:** 
 
-  - *Gender segmentation is clear:* The top-left chart shows females prefer KP281, males dominate KP781, and KP481 has more balanced gender distribution. This is one of your strongest patterns.
-  - *Income is the strongest predictor:* The middle-bottom chart clearly shows KP781 buyers have much higher incomes than other groups, with almost no overlap in income ranges between products.
-  - *Fitness level increases with product tier:* The top-right chart shows KP781 buyers rate themselves as most fit (mostly 4-5), while KP281 buyers are least fit (mostly 3-4).
-  - *Age differences are minimal:* The bottom-left chart shows all three products have similar age ranges, with only slight variations - age isn't a major differentiator.
-  - *Usage patterns align with product tiers:* The bottom-right chart shows KP781 buyers plan highest weekly usage (mostly 4-5 times), while KP281 buyers plan lowest usage (mostly 2-3 times).
+  - *Gender segmentation :* The top-left chart shows females prefer KP281, males dominate KP781, and KP481 has more balanced gender distribution. This is one of your strongest patterns.
+  - *Income :* The middle-bottom chart clearly shows KP781 buyers have much higher incomes than other groups, with almost no overlap in income ranges between products.
+  - *Fitness level:* The top-right chart shows KP781 buyers rate themselves as most fit (mostly 4-5), while KP281 buyers are least fit (mostly 3-4).
+  - *Age differences :* The bottom-left chart shows all three products have similar age ranges, with only slight variations - age isn't a major differentiator.
+  - *Usage patterns :* The bottom-right chart shows KP781 buyers plan highest weekly usage (mostly 4-5 times), while KP281 buyers plan lowest usage (mostly 2-3 times).
 
 ![BIVARIATE ANALYSIS - PRODUCT VS OTHER VARIABLES](https://github.com/user-attachments/assets/fb522707-dd38-4aaa-bd21-7a4690dbc245)
 
@@ -127,8 +158,9 @@ Aerofit-Customer-Analysis/
 ```
 
 
-# **Final Business Insights & Recommendations**
-## **Top 8 Insights & Recommendations**
+# **Top Business Insights & Recommendations**
+
+## ** Top Insights**
 
 ### 1. Product Popularity:
 - KP281 is the most popular product (44% of sales), followed by KP481 (33%), and KP781 (23%). This shows a healthy distribution across price points.
@@ -138,7 +170,7 @@ Aerofit-Customer-Analysis/
 - Females: 57% of KP281 buyers are female
 - KP481 has balanced gender distribution
 
-### 3. Income :
+### 3. Income:
 - KP781 buyers have highest average income ($74,000)
 - KP481 buyers have moderate income ($55,000)
 - KP281 buyers have lowest average income ($45,000)
@@ -167,7 +199,7 @@ Aerofit-Customer-Analysis/
 - A highly fit customer (level 4-5) has 68% probability of buying KP781
 
   
-# **RECOMMENDATIONS**
+# ** Top Recommendation**
 
 ### Targeted Marketing Campaigns:
 - KP781: Target males with high income, emphasize advanced features
@@ -188,6 +220,7 @@ Aerofit-Customer-Analysis/
 - Offer financing options for KP781 to make it accessible to middle-income serious fitness enthusiasts.
 ### Marital Status : 
 - Create family/friend referral programs, especially for KP281 and KP481 which are popular among partnered individuals.
+
 
 ---
 
