@@ -5,7 +5,7 @@
 - **Business Problem** - What challenge Aerofit faced
 - **Objectives** - What the analysis aimed to achieve
 - **Technical Stack** - Tools and technologies used
-- **Project Features** - What you actually built/analyzed
+- **Project Features** - What actually built/analyzed
 - **Repository Structure** - How the project is organized
 - **Top Business Insights & Recommendations** - Actionable business outcomes
 
